@@ -4,6 +4,7 @@ groovy:
 jdk:
   - oraclejdk8
 
+
 before_install:
     - wget http://dl.bintray.com/groovy/maven/groovy-binary-2.3.9.zip
     - unzip groovy-binary-2.3.9.zip
