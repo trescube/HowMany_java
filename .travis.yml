@@ -12,4 +12,4 @@ before_install:
 
 script:
     - groovy -version
-    - groovy com/stupidplebs/howmany/HowManySpec.groovy
+    - groovy src/test/groovy/com/stupidplebs/howmany/HowManySpec.groovy
