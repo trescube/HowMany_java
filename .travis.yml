@@ -4,12 +4,11 @@ groovy:
 jdk:
   - oraclejdk8
 
-
 before_install:
-    - wget http://dl.bintray.com/groovy/maven/groovy-binary-2.3.9.zip
-    - unzip groovy-binary-2.3.9.zip
-    - export PATH=$PWD/groovy-2.3.9/bin:$PATH
+  - wget http://dl.bintray.com/groovy/maven/groovy-binary-2.3.9.zip
+  - unzip groovy-binary-2.3.9.zip
+  - export PATH=$PWD/groovy-2.3.9/bin:$PATH
 
 script:
-    - groovy -version
-    - groovy src/test/groovy/com/stupidplebs/howmany/HowManySpec.groovy
+  - groovy -version
+  - gradle test
