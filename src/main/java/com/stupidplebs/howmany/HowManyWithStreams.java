@@ -8,9 +8,9 @@ import java.util.Map;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.stream.Stream;
 
-public class HowMany {
+public class HowManyWithStreams {
     public static void main(String[] args) {
-        final Map<Integer,Integer> solution = new HowMany().solve();
+        final Map<Integer,Integer> solution = new HowManyWithStreams().solve();
         
         System.out.println(solution.keySet().stream().
                                     map(k -> solution.get(k) + " " + k + "'s").
@@ -18,7 +18,7 @@ public class HowMany {
         
     }
     
-    public HowMany() {}
+    public HowManyWithStreams() {}
     
     public Map<Integer,Integer> solve() {
         final Map<Integer,Integer> d = new HashMap<>();

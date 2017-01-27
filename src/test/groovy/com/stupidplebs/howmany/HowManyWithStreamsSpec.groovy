@@ -2,10 +2,10 @@ package com.stupidplebs.howmany
 
 import spock.lang.Specification
 
-class HowManySpec extends Specification {
+class HowManyWithStreamsSpec extends Specification {
     def "solve should return the correct result"() {
         given:
-        def howMany = new HowMany()
+        def howMany = new HowManyWithStreams()
         
         when:
         def actual = howMany.solve()
