@@ -23,7 +23,7 @@ public class HowManyWithStreams {
     public Map<Integer,Integer> solve() {
         final Map<Integer,Integer> d = new HashMap<>();
 
-        Stream.generate(new AtomicInteger()::getAndIncrement).
+        final Boolean matches = Stream.generate(new AtomicInteger()::getAndIncrement).
                 map(i -> i % 10).
                 map(i -> d.put(i, countOccurences(i, d.values()))).
                 anyMatch(i -> isSolved(d) );

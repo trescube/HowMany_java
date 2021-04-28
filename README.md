@@ -13,3 +13,10 @@ The solution in [HowManyWithStreams](src/main/java/com/stupidplebs/howmany/HowMa
 Travis status
 =============
 [![Build Status](https://travis-ci.org/trescube/HowMany_java.svg?branch=master)](https://travis-ci.org/trescube/HowMany_java)
+
+## Bazel
+
+I think this works with Bazel with:
+
+- `bazel build '...'`
+- `bazel test '...'`
